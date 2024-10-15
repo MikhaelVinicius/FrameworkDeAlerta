@@ -1,4 +1,10 @@
  public class AlertaTerremoto implements EstrategiaAlerta {
+
+    @Override
+    public void isTest(){
+        System.err.println("Isso não é um teste!");
+    }
+
     @Override
     public void emitirAlerta() {
         System.out.println("Alerta: Terremoto detectado! Procure abrigo.");

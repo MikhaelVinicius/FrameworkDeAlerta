@@ -13,5 +13,8 @@ public class main {
 
         sistema.definirEstrategia(new AlertaMeteoro());
         sistema.emitirAlerta();
+        
+        sistema.recomedacao();
+        sistema.isTest();
     }
 }

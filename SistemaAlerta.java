@@ -26,4 +26,20 @@ public class SistemaAlerta {
             System.out.println("Nenhuma estratégia de alerta definida.");
         }
     }
+
+    public void recomedacao(){
+        if (estrategiaAtual != null){
+            estrategiaAtual.recomedacao();
+        } else {
+            System.out.println("Nenhuma recomedação disponivel");
+        }
+    }
+
+    public void isTest(){
+        if (estrategiaAtual != null) {
+            estrategiaAtual.isTest();
+        } else {
+            System.out.println("Isso não é um teste!");
+        }
+    }
 }

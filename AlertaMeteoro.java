@@ -6,6 +6,11 @@ public class AlertaMeteoro implements EstrategiaAlerta {
 
     @Override
     public void recomedacao(){
-       System.out.println("Se despeça!"); 
+       System.out.println("Recomendação: Se despeça!"); 
+    }
+
+    @Override
+    public void isTest(){
+        System.err.println("Isso é um teste!");
     }
 }
