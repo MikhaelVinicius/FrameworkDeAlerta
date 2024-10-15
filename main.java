@@ -15,6 +15,6 @@ public class main {
         sistema.emitirAlerta();
         
         sistema.recomedacao();
-        sistema.isTest();
+        sistema.isTest(false);
     }
 }

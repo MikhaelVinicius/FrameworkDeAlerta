@@ -1,4 +1,4 @@
-public class AlertaMeteoro implements EstrategiaAlerta {
+public class AlertaMeteoro implements StrategyAlerta {
     @Override
     public void emitirAlerta() {
         System.out.println("Alerta: Meteoro em rota de colisão! Proteja-se.");
@@ -10,7 +10,11 @@ public class AlertaMeteoro implements EstrategiaAlerta {
     }
 
     @Override
-    public void isTest(){
-        System.err.println("Isso é um teste!");
+    public void isTest(boolean isTest){
+        if(isTest == true){
+            System.err.println("Isso é um teste! Não leve em consideração");
+        } else{
+            System.out.println("AVISO: ISSO NÃO É UM TESTE!");
+        }
     }
 }

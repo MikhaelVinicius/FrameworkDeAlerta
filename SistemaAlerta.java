@@ -1,6 +1,6 @@
 public class SistemaAlerta {
     private static SistemaAlerta instancia;
-    private EstrategiaAlerta estrategiaAtual;
+    private StrategyAlerta estrategiaAtual;
 
    
     private SistemaAlerta() {}
@@ -14,7 +14,7 @@ public class SistemaAlerta {
     }
 
   
-    public void definirEstrategia(EstrategiaAlerta estrategia) {
+    public void definirEstrategia(StrategyAlerta estrategia) {
         this.estrategiaAtual = estrategia;
     }
 
@@ -35,9 +35,9 @@ public class SistemaAlerta {
         }
     }
 
-    public void isTest(){
+    public void isTest(boolean isTest){
         if (estrategiaAtual != null) {
-            estrategiaAtual.isTest();
+            estrategiaAtual.isTest(isTest);
         } else {
             System.out.println("Isso não é um teste!");
         }

@@ -1,4 +1,4 @@
-public class AlertaMissil implements EstrategiaAlerta {
+public class AlertaMissil implements StrategyAlerta {
     
 @Override
 public void emitirAlerta(){
@@ -10,10 +10,13 @@ public void recomedacao(){
 }
 
 @Override
-public void isTest(){
-    System.err.println("Isso não é um teste!");
+public void isTest(boolean isTest){
+    if(isTest == true){
+        System.err.println("Isso é um teste! Não leve em consideração");
+    } else{
+        System.out.println("AVISO: ISSO NÃO É UM TESTE!");
+    }
 }
-
 
 
 }
