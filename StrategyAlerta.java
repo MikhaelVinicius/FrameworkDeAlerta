@@ -1,5 +1,5 @@
 public interface StrategyAlerta {
-    void emitirAlerta();
+    void emitirAlerta(Object[] parametros);
     void recomedacao();
-    void isTest(boolean isTest);
+    void isTest();
 }
